@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+ var array1= [1,2,3,4];
+        var array2=[5,6,7,8];
+        var merge=[array1,array2];
+
+        var multiArray1=[0,1,2,3];
+        var multiArray2=[1,0,1,2];
+        var multiArray3= [2,1,0,1];
+        var multiArrayMerge =[multiArray1,multiArray2,multiArray3];
+        for(var i=0; i< multiArrayMerge.length; i++ ){
+            for(var j=0; j<multiArrayMerge[i].length;j++){
+                document.write(multiArrayMerge[i][j]);
+            }
+            document.write("<br>");
+
+        }
+
+
+
+
+        for(var i=1; i<=10; i++){
+            document.write("<br>"+i);
+        }
+
+        document.write("<br><br>");
+
+
+
+        var number= +prompt("Enter number to print its multiplication table");
+        var length= +prompt("Enter length of table");
+        
+        for(var k=1; k<= length ; k++){
+            document.write(number + " * " + k +"=" + (number*k) +"<br>");
+        }
+        document.write("<br><br>");        
+
+
+
+        var fruits = ["apple", "banana", "mango", "orange","strawberry"]
+        for( var i=0 ; i< fruits.length; i++){
+            document.write("<br>"+ fruits[i]);
+        }
+        for( var i=0 ; i< fruits.length; i++){
+            document.write("<br>Element at index " +i + " is " + fruits[i]);
+        }
+        
+
+        document.write('<br><br><b>Counting:</b>');
+        document.write("1")
+        for(var i=2 ; i< 16 ; i++){
+            document.write(","+i)
+        }
+
+
+
+        document.write('<br><br><b>Reverse Counting:</b>');
+        document.write("10")
+        for(var i=9 ; i> 0 ; i--){
+            document.write(","+i)
+        }
+
+        document.write('<br><br><b>Even:</b>');
+        document.write("0")
+        for(var i=2 ; i< 21 ; i+=2){
+            document.write(","+i)
+        }
+
+
+
+        document.write('<br><br><b>Odd:</b>');
+        document.write("1")
+        for(var i=3 ; i< 20 ; i+=2){
+            document.write(","+i)
+        }
+
+
+
+        document.write('<br><br><b>Series:</b>');
+        for(var i=2 ; i<=18 ; i+=2){
+            document.write(i+"k,")
+        }
+        document.write("20k")
+        
+
+
+
+        var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+        var input= prompt("Enter item you want to order");
+        var itemFound= false;
+        for(var i=0; i< A.length; i++){
+            if(A[i]== input){
+                itemFound= true;
+                var index= i;
+                break;
+
+            }
+        }
+        if(itemFound){
+            alert(input+ " is available at index "+index +" in our bakery" )
+        }
+        else {
+            alert(input+ " is not available in our bakery" )
+            
+        }
+
+
+
+
+        var A= [24,34,56,78];
+        document.write("<br><br> Array items: " + A);
+        var temp= A[0];
+        for(var j=1; j< A.length ; j++){
+            if(temp < A[j])
+            temp= A[j]
+        }
+        document.write("<br><br>Largest Element is : " + temp)
+
+
+
+
+
+        var A= [24,34,56,78];
+        document.write("<br><br> Array items: " + A);
+        var temp= A[0];
+        for(var j=1; j< A.length ; j++){
+            if(temp > A[j])
+            temp= A[j]
+        }
+        document.write("<br><br>Smallest Element is : " + temp);
+        document.write("<br><br>")
+
+        for(var l=5 ; l<=100; l+=5){
+            document.write(l+",");
+        }
+
+
+
+        var scores = [12, 45, 3, 22, 34, 50];
+        var stop= +prompt("Enter number to stop");
+        document.write("<br><br>");
+        for(var i=0 ; i <= scores.length; i++){
+            if(stop == scores[i])
+            var loc= i
+        }
+        for(var k =0 ; k<=loc ; k++){
+            document.write(scores[k]+",");
+        }
+        document.write("<br><br>")
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var students=[];
+        var newStudents= new Array();
+        var stringArray=["Aisha","Saeed"];
+        var numberArray=[1,2,3,4];
+        var booleanArray=[true,false];
+        var mixedArray=["Aisha", "MCS", 22 , true];
+        
+        
+        var qualification=[ "SSC", "HSC", "BCS","BS","BCOM", "MS", "M. Phil.", "PhD"];
+        
+        
+        document.write("<b>Qualification</b><br>");1
+        for(var i=0; i< qualification.length; i++){
+            document.write("<b>"+(i+1)+" "+qualification[i]+"</b><br>")
+        }
+
+
+        var names=["Micheal","John","Tony"];
+        var score=[320,280,480];
+        for(var j=0; j<3;j++){
+            document.write("<br>Score of "+ names[j]+" is "+ score[j] + " and percentage is "+ (score[j]*100/500) +"%<br>");
+        }
+
+
+
+        var colors=["red", "orange" ,"blue"];
+        document.write("<br><b>Initial array of colors</b>");
+        for(var k=0; k< 3; k++){
+            document.write("<br>"+colors[k]);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
